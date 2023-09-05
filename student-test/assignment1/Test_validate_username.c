@@ -13,10 +13,12 @@
 *       the [unity assertion reference](https://github.com/ThrowTheSwitch/Unity/blob/master/docs/UnityAssertionsReference.md)
 */
 void test_validate_my_username()
-{
+{    
+    
     /**
      * TODO: Replace the line below with your code here as described above to verify your /conf/username.txt 
      * config file and my_username() functions are setup properly
      */
-    TEST_ASSERT_TRUE_MESSAGE(false,"abdurrabshaukat");
+    TEST_ASSERT_EQUAL_STRING(malloc_username_from_conf_file(),my_username());
+    //TEST_ASSERT_TRUE_MESSAGE(false,"abdurrabshaukat");
 }
